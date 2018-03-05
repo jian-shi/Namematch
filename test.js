@@ -39,7 +39,6 @@ function calculate(input){
     else if (syntaxError.test(input)){
         return result = "Error: Syntax Error";
     }
-    
     else{
         for (let i = 0; i<operators.length; i++){ //loop operators by precedence
             let operator = operators[i];
