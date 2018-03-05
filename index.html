@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>JIAN's test</title>
+    
+  </head>
+  <body>
+        <h4>NAME:JIAN SHI</h4>
+        <div id = "test1">
+            <h4>#1 Given an input with a string, use recursion to find the first position letter a is on.</h4>
+            <div>
+                <label for="input">Input:</label>
+                <input type="text" id="input1" value="bcdefgabcdefg" />
+                <input type="button" 
+                        value="find first 'a'" 
+                        onclick="getElementById('result1').value = findA(getElementById('input1').value)" />
+            </div> 
+
+            <div>
+                <label for="result">Output:</label>
+                <input type="text" id="result1" />
+            </div>
+        </div>
+
+        <hr>
+
+        <div id = "test2">
+            <h4>#2 Write a program where, given a number of random string, it will output the the calculated result as a report. The equal signs used for the report title also needs to be printed out. See the example below.</h4>
+            <div>
+                <label for="input2">Input: </label>
+                <input type="text" id="input2" value="a_++efg" />
+                <input type="button" 
+                    value="report" 
+                    onclick="getElementById('result2').innerHTML = countString(getElementById('input2').value)" />
+            </div>
+                
+            <div>
+                <label for="result2">Output: </label>
+                <div id="result2"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id = "test3">
+            <h4>#3 Write a calculator which takes in a number of string input and perform calculation. The input can accept a number of operators.</h4>
+            <div>
+                <label for="input">Input: </label>
+                <input type="text" id="input3" value="3 x 3 + 3 - 2" />
+                <input type="button" 
+                        value="calculate" 
+                        onclick="getElementById('result3').value = calculate(getElementById('input3').value)" />
+            </div>
+                  
+            <div>
+                <label for="result3">Output: </label>
+                <input type="text" id="result3" />
+            </div>
+            
+        <script src="test.js"></script>
+        </div>          
+</html>
